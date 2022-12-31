@@ -1,0 +1,150 @@
+.Home {
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+}
+.images {
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  transition: 3s;
+  position: absolute;
+}
+.shop-now {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  font-family: "Futura";
+  font-size: 20px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: black;
+  bottom: 3%;
+  background-color: white;
+  padding: 16px 90px;
+  border: none;
+  border-radius: 50px;
+}
+.text-sneaker {
+  position: absolute;
+  color: white;
+  right: 100px;
+  bottom: 220px;
+  padding: 20px;
+  max-width: 480px;
+}
+.text-sneaker h1 {
+  font-family: "Futura", "Inter Tight", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.text-sneaker p {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+/* Slide */
+.w-100 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100% !important;
+}
+.carousel-item {
+  height: 100vh;
+}
+.carousel-inner .carousel-item:nth-child(1) {
+  background: var(--CourtPurple);
+}
+.carousel-inner .carousel-item:nth-child(2) {
+  background: var(--AJOffWhitte);
+}
+.carousel-inner .carousel-item:nth-child(3) {
+  background: var(--AF1OffWhitte);
+}
+.carousel-inner .carousel-item:nth-child(4) {
+  background: var(--Chicago);
+}
+.carousel-indicators {
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 2%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+}
+
+@media (max-height: 930px) {
+  .text-sneaker {
+    bottom: 130px;
+  }
+  .shop-now {
+    bottom: 20px;
+  }
+}
+@media (max-height: 650px) {
+  .images.first {
+    height: 150vh;
+  }
+  .images.first .text-sneaker {
+    bottom: 100px;
+  }
+  .images.first img {
+    top: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  .w-100 {
+    top: 36%;
+  }
+  .text-sneaker {
+    padding: 42px;
+    bottom: 60px;
+    margin: 0 auto;
+    right: initial;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .images.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .w-100 {
+    top: 36%;
+  }
+  .text-sneaker {
+    padding: 42px;
+    bottom: 60px;
+    margin: 0 auto;
+    right: initial;
+  }
+  .carousel-item img {
+    scale: 130%;
+  }
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .shop-now {
+    width: 90%;
+    padding: 16px 0;
+  }
+}
