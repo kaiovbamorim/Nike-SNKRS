@@ -1,0 +1,207 @@
+.EstruturaPagina svg {
+  color: black;
+}
+.EstruturaPagina .btnMenu span {
+  background-color: black;
+}
+.content-compras {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+.img-sneaker {
+  width: 100%;
+  max-width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-sneaker img {
+  width: 100%;
+}
+.buy-sneaker {
+  padding: 80px;
+  padding-top: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.buy-sneaker h1 {
+  font-family: "Futura", "Inter Tight", sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+.buy-sneaker h2 {
+  font-size: 28px;
+  font-family: "Futura", "Inter Tight", sans-serif;
+  font-weight: 200;
+}
+.text-compras svg {
+  cursor: pointer;
+  width: 40px;
+}
+.text-compras p {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+  color: gray;
+  max-width: 700px;
+}
+.size-qty {
+  margin: 40px 0px;
+}
+.size-qty h3 {
+  margin: 0;
+  margin-right: 20px;
+  font-family: "Futura", "Inter Tight", sans-serif;
+  font-weight: 700;
+}
+.size {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.number-sneaker {
+  display: flex;
+  align-items: center;
+}
+.number-sneaker label {
+  transition: 0.2s;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  border: 2.5px solid gray;
+  color: gray;
+  background-color: white;
+  border-radius: 50%;
+}
+.number-sneaker span {
+  font-family: "Futura";
+  position: relative;
+  left: 8px;
+  top: 3px;
+}
+.number-sneaker input {
+  display: none;
+}
+.number-sneaker input:checked + .label {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+.compra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.compra h4 {
+  font-weight: 200;
+  font-family: "Futura", "Inter Tight", sans-serif;
+  font-size: 80px;
+}
+.compra button {
+  border: none;
+  padding: 24px 20px;
+  margin-left: 40px;
+  min-width: 205px;
+  font-size: 26px;
+  border-radius: 10px;
+  white-space: nowrap;
+  color: white;
+  font-family: "Futura";
+}
+@media (min-width: 2000px) {
+  .buy-sneaker h1 {
+    font-size: 4vw;
+  }
+  .buy-sneaker h2 {
+    font-size: 1.2vw;
+  }
+  .text-compras p {
+    line-height: 1.7vw;
+    font-size: 0.8vw;
+    max-width: 40vw;
+  }
+  .text-compras svg {
+    width: 2.8vw;
+  }
+}
+@media (max-width: 1000px) {
+  .content-compras {
+    flex-direction: column;
+  }
+  .img-sneaker {
+    min-width: 100%;
+    min-height: 60vh;
+  }
+  .img-sneaker img {
+    max-width: 480px;
+  }
+  .buy-sneaker {
+    position: relative;
+    border-radius: 30px;
+    top: -50px;
+    padding: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .buy-sneaker {
+    padding: 50px 30px;
+  }
+  .img-sneaker {
+    min-height: 50vh;
+  }
+  .img-sneaker img {
+    max-width: 320px;
+  }
+  .compra {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .compra h4 {
+    font-size: 60px;
+  }
+  .compra button {
+    margin: 0;
+    padding: 16px 22px;
+    min-width: 100%;
+  }
+  .size-qty {
+    margin-bottom: 0;
+  }
+  .number-sneaker label {
+    margin: 4px;
+  }
+}
+@media (max-width: 330px) {
+  .size {
+    flex-direction: column;
+  }
+  .compra h4 {
+    font-size: 44px;
+  }
+  .compra button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .size {
+    justify-content: center;
+  }
+  .compra h4 {
+    font-size: 46px;
+    text-align: center;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
