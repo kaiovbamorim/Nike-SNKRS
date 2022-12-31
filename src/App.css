@@ -1,38 +1,43 @@
+:root {
+  --CourtPurple: linear-gradient(#411092, #975def, #975def, #411092);
+  --CourtPurpleButton: linear-gradient(40deg, #411092, #975def);
+  --AJOffWhitte: linear-gradient(#186bd0, #83cef0, #83cef0, #186bd0);
+  --AJOffWhitteButton: linear-gradient(40deg, #186bd0, #83cef0);
+  --AF1OffWhitte: linear-gradient(#a3f800, #c3e386, #c3e386, #a3f800);
+  --AF1OffWhitteButton: linear-gradient(40deg, #a3f800, #c3e386);
+  --Chicago: linear-gradient(#780303, #bb0000, #bb0000, #780303);
+  --ChicagoButton: linear-gradient(40deg, #a11313, #e84432);
+  --Kyrie5: linear-gradient(#fb436b, #df6090, #df6090, #fb436b);
+  --Kyrie5Button: linear-gradient(40deg, #fb436b, #df6090);
+  --AJ411Lab: linear-gradient(#850000, #cd0c0c, #cd0c0c, #850000);
+  --AJ411LabButton: linear-gradient(40deg, #850000, #cd0c0c);
+  --NikeDunkRetro: linear-gradient(#302f2f, #626262, #626262, #302f2f);
+  --NikeDunkRetroButton: linear-gradient(40deg, #302f2f, #626262);
+  --AF1: linear-gradient(#848484, #f4f4f4, #f4f4f4, #848484);
+  --AF1Button: linear-gradient(40deg, #848484, #d5cdcd);
+  --DunkUniversityBlue: linear-gradient(#3c8df1, #58bbe9, #58bbe9, #3c8df1);
+  --DunkUniversityBlueButton: linear-gradient(40deg, #3c8df1, #58bbe9);
+  --AJ11Retro: linear-gradient(#27748d, #e1ebeb, #e1ebeb, #27748d);
+  --AJ11RetroButton: linear-gradient(40deg, #27748d, #e1ebeb);
+  --AJ1PineGreen: linear-gradient(#0c3808, #11983c, #11983c, #0c3808);
+  --AJ1PineGreenButton: linear-gradient(40deg, #0c3808, #11983c);
+  --AJ4BlackCat: linear-gradient(#222020, #404040, #404040, #222020);
+  --AJ4BlackCatButton: linear-gradient(40deg, #222020, #404040);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(2, 9, 42);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "Futura";
+  src: url(../public/FuturaBoldFont.ttf) format(truetype);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap");
+@media (max-width: 210px) {
+  .App {
+    position: absolute;
   }
 }
