@@ -1,0 +1,102 @@
+.Produtos {
+  width: 100%;
+  padding: 60px;
+  padding-top: 80px;
+  background-color: white;
+}
+.limited-area {
+  margin-top: 80px;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Produtos h2 {
+  font-family: "Futura", "Inter Tight", sans-serif;
+  font-weight: 200;
+  font-size: 70px;
+  padding-left: 60px;
+}
+.sneakers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+.container-sneaker {
+  cursor: pointer;
+  color: black;
+  position: relative;
+  max-height: 600px;
+  height: 30vw;
+}
+.container-sneaker img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container-sneaker h3 {
+  padding: 0 10%;
+  bottom: 16%;
+  font-size: 1.38vw;
+  position: absolute;
+  font-family: "Inter Tight", sans-serif;
+}
+.container-sneaker h4 {
+  padding: 0 10%;
+  bottom: 10%;
+  position: absolute;
+  font-size: 1.8vw;
+  font-weight: bold;
+  font-family: "Futura";
+}
+@media (min-width: 2000px) {
+  .container-sneaker h3 {
+    font-size: 36px;
+  }
+  .container-sneaker h4 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .sneakers {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-sneaker {
+    height: 50vw;
+  }
+  .Produtos h2 {
+    font-size: 50px;
+  }
+  .container-sneaker h3 {
+    font-size: 2.7vw;
+  }
+  .container-sneaker h4 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 700px) {
+  .sneakers {
+    grid-template-columns: 1fr;
+  }
+  .container-sneaker {
+    height: 90vw;
+  }
+  .container-sneaker h3 {
+    font-size: 4.5vw;
+  }
+  .container-sneaker h4 {
+    font-size: 5.2vw;
+  }
+}
+@media (max-width: 600px) {
+  .Produtos {
+    padding: 60px 20px;
+  }
+  .Produtos h2 {
+    text-align: center;
+    padding: 0;
+  }
+  .container-sneaker {
+    height: 105vw;
+  }
+}
